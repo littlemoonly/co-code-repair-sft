@@ -1,0 +1,61 @@
+# Python 缓存和本地环境
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# 编辑器和操作系统文件
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.DS_Store
+Thumbs.db
+
+# 训练输出、日志和临时文件
+runs/
+logs/
+outputs/
+*.log
+*.tmp
+*.temp
+
+# Hugging Face 等工具产生的缓存
+.cache/
+**/.cache/
+**/huggingface/
+
+# 模型权重、checkpoint 和其他大文件
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+*.rar
+
+# 构建和覆盖率产物
+build/
+dist/
+*.egg-info/
+.coverage
+htmlcov/
+
+models
+testbench
+AGENTS.md
+.vscode
+
+data/problem_catalog.jsonl
+data
