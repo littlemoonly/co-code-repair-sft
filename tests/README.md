@@ -5,6 +5,7 @@
 - `test_evaluate_repair.py`：测试代码块提取、输出匹配、评测汇总，以及真实 Icarus 编译/仿真结果。
 - `test_compare_repair.py`：测试基线与 LoRA 结果的配对比较，以及评测条件不一致时的拒绝逻辑。
 - `test_audit_repair_pairs.py`：测试审计缓存的超时限制，避免复用超过当前时限的旧成功结果。
+- `test_quality_sampling.py`：测试五维质量评分、硬过滤和按分数采样。
 
 在项目根目录运行全部测试：
 

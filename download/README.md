@@ -3,7 +3,7 @@
 `download` 目录负责从原始数据生成可训练、可验证的 repair pair 数据，按阶段分为四组：
 
 - `catalog/`：题目目录、数据库题目清单和题目统计。
-- `filtering/`：代码规范化、注释清理、pair 筛选和编辑距离过滤。
+- `filtering/`：代码规范化、注释清理、硬规则过滤、多维质量评分和分层采样。
 - `verification/`：使用 testbench 验证 buggy/fixed 代码对。
 - `conversion/`：把验证后的 pair 转换为 SFT JSONL，并按学生划分数据集。
 
@@ -17,6 +17,7 @@ catalog -> filtering -> verification -> conversion
 
 ```bash
 python -m download.filtering.filter_repair_pairs
+python -m download.filtering.score_and_sample_repair_pairs
 python -m download.conversion.convert_repair_pairs_to_sft
 ```
 
